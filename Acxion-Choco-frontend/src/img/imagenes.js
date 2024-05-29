@@ -8,6 +8,17 @@ import introduccionia from "/src/img/introduccionia.jpg";
 import introduccionprogramacion from "/src/img/introduccionprogramacion.jpg";
 import microservicios from "/src/img/microservicios.webp";
 import patronesdiseno from "/src/img/patronesdiseno.png";
+import deGrasseTyson from "/src/img/deGrasseTyson.png";
+import elijaMcCoy from "/src/img/ElijahMcCoy.jpg";
+import emmettChappelle from "/src/img/emmettChappelle.jpg";
+import georgeCarver from "/src/img/GeorgeCarver.png";
+import maeJemison from "/src/img/maeJemison.jpg";
+import shirleyJackson from "/src/img/shirleyJackson.jpg";
+import renacentismoafri from "/src/img/renacentismoafri.jpg";
+
+
+
+
 
 export default [
     atrato1,
@@ -19,5 +30,12 @@ export default [
     introduccionia,
     introduccionprogramacion,
     microservicios,
-    patronesdiseno
+    patronesdiseno,
+    deGrasseTyson,
+    elijaMcCoy,
+    emmettChappelle,
+    renacentismoafri,
+    georgeCarver,
+    maeJemison,
+    shirleyJackson
 ]
