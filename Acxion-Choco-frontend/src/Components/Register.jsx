@@ -89,10 +89,7 @@ const Register = () => {
                 <Typography sx={{ fontSize: '18px', margin: '10px 10px', textAlign: 'center' }}>
                     ¿Ya tienes cuenta?{' '}
                     <Link to="/" className="transition cursor-pointer">Inicia sesión</Link>
-
                 </Typography>
-
-
             </Box>
         </form>
     )
