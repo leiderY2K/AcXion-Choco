@@ -9,8 +9,10 @@ import { Route, Routes } from "react-router-dom";
 import Icons from "./Components/Icons.jsx";
 import Nav from "./Components/Nav.jsx";
 import Courses from './Components/Courses.jsx';
-//import Algoritmos from './Components/cours/Algoritmos.jsx';
-//import Algoritmos from '/src/Components/cours/algoritmos.jsx';
+import Statistics from './Components/Statistics';
+import AddCourse from './Components/AddCourse';
+import Details from './Components/Details';
+
 
 function App() {
     return (
@@ -26,6 +28,9 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/courses" element={<Courses />} />
+                    <Route path="/statistics" element={<Statistics />} />
+                    <Route path="/addCourse" element={<AddCourse />} />
+                    <Route path="/details" element={<Details />} />
                 </Routes>
             </div>
         </>
