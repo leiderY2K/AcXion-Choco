@@ -31,9 +31,16 @@ public class AuthService {
     public AuthResponse login(LoginRequest request) {
         Optional<User> user = userRepository.findByEmail(request.getMail());
         if (user.isPresent() && passwordEncoder.matches(request.getPassword(), user.get().getPassword())) {
+
+            String role = user.get().getRoles().stream()
+                    .findFirst()
+                    .map(Role::getIdRole)
+                    .orElse("UNKNOWN");
+
             return AuthResponse.builder()
                     .message("Login successful")
                     .mail(request.getMail())
+                    .role(role)
                     .build();
         } else {
             return AuthResponse.builder()

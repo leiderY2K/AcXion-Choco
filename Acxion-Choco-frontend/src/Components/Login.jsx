@@ -24,9 +24,16 @@ const Login = () => {
                 mail: email,
                 password: password
             });
-            
+
             if (response.data.message === 'Login successful') {
-                navigate('/courses');
+                const role = response.data.role; // Rol obtenido de la respuesta del backend
+                if (role === 'EST') {
+                    navigate('/courses');
+                } else if (role === 'PRO') {
+                    navigate('/statistics');
+                } else {
+                    setError('Rol no reconocido');
+                }
             } else if (response.data.message === 'Invalid email or password') {
                 setError('Email o contraseña inválidos');
             } else {
